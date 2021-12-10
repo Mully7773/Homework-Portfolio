@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    text-align: left;
+    background: whitesmoke;
+    color: turquoise;
+    font-size: 30px;
+    border-bottom: 1px solid rgb(85, 7, 85);
+  }
+
+/* Still a bit uncertain how flex works... */
+ul { 
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    float: right;
+}
+
+li {
+    padding: 20px;
+    text-decoration: none;
+  }
+
+  span {
+      font-family: 'Sora', sans-serif;
+      font-size: 21px;
+      color:rgba(110, 16, 110, 0.808)
+  }
+
+  span:hover {
+    color: turquoise;
+    text-decoration: underline;
+  }
+
+ h1 {
+     /* Used padding here to get the links to move more toward the right...I think there is probably a better way to do this. */
+     padding-right: 20%;  
+     padding-left: 0.5%;
+     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+ }
+ 
+a:link {
+    text-decoration: none;
+}
