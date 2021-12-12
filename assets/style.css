@@ -33,10 +33,10 @@
     
   }
 
-/* Still a bit uncertain how flex works... */
 ul { 
     display: flex;
     list-style: none;
+    float: right;
 }
 
 nav li {
@@ -59,7 +59,7 @@ nav li {
 
  h1 {
      /* Used padding here to get the links to move more toward the right...I think there is probably a better way to do this. */
-     padding-right: 20%;  
+     /* padding-right: 20%;   */
      padding-left: 0.5%;
      font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
  }
@@ -70,10 +70,19 @@ nav li {
 a:link {
     text-decoration: none;
 }
+a {
+    display: block;
+}
+
+.work-item:hover {
+    border-color: teal;
+    border-style: double;
+    border-width: 4px;
+  }
 
 /* Begin Sky Banner */
 .header-2 {
-    width: auto;
+    width: 100%;
     height: 200px;
     background-image: url("cloud--1024x667.jpg");
     background-repeat: no-repeat;
@@ -107,8 +116,9 @@ a:link {
 }
 
 img {
-    width: 320px;
+    width: 160px;
     height: 180px;
+    border-radius: 50%;
 }
 
 .about-info {
@@ -131,6 +141,7 @@ img {
     flex-direction: row-reverse;
     flex-wrap: wrap;
     margin-left: 2px;
+    width:100%;
     /* margin-top: 20%; */
     /* margin-right: 2%; */
     padding: 20px;
@@ -138,40 +149,45 @@ img {
 }
 
 .work-item {
-    width: 50%;
+    /* width: 50%; */
     margin: 10px;
     border: 3px solid black;
-    background-color: yellow;
+    background-image: url("640x360.png");
 }
 
 .work-item-1 {
     /* Setting flex grow to 1 on one of the top items and one of the bottom items lined things up.  */
-    flex: 2 1 50%;
+    flex: 2 1 100%;
     min-height: 300px;
 }
 
 
 .work-item-2 {
     min-height: 100px;
-    width: 400px;
+    width: 50%;
 }
 
 .work-item-3 {
     flex: 1 0 0;
     min-height: 100px;
-    width: 400px;
+    width: 50%;
 }
 
 .work-item-4 {
     min-height: 100px;
-    width: 400px;
-    /* width: 80%; */
+    /* width: 300px; */
+    width: 50%;
 }
 
 .work-item-5 {
     flex: 1 0 0;
     min-height: 100px;
-    width: 400px;
+    width: 50%;
+}
+
+footer {
+    text-align: center;
+    color: rgb(116, 116, 214)
 }
 /* .info {
     float: right;
@@ -192,7 +208,7 @@ img {
 span {
     color: white;
     font-weight: bold;
-}
+} 
     h1 {
         text-align: center;
     }
@@ -210,26 +226,73 @@ span {
 
 }
 
-/* @media screen and (min-width:594) and (max-width: 786px) {
-    .header {
+@media screen and (min-width:594px) and (max-width: 786px) {
+    header {
         flex-wrap: wrap;
         width: 100%;
-        padding: 25px;
         margin: auto;
         text-align: center;
     }
-}
+    span {
+        color: white;
+        font-weight: bold;
+    }
+
+    h1 {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
 .about-container {
     flex-wrap: wrap;
-    width: 50%;
+    width: 100%;
+    margin-right: auto;
 }
 
 .work-container {
     flex-wrap: wrap;
-    width: 50%;
+    width: 100%;
+}
 }
 
-@media all and (max-width: 594px) {
+@media screen and (min-width:786px) and (max-width: 1000px) {
+    header {
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    span {
+        color: white;
+        font-weight: bold;
+    }
+
+    h1 {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+.about-container {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-right: auto;
+}
+
+.work-container {
+    flex-wrap: wrap;
+    width: 100%;
+}
+}
+
+
+
+
+
+
+
+
+
+/* @media all and (max-width: 594px) {
     header {
         flex-wrap: wrap;
         width: 100%;
@@ -244,9 +307,12 @@ span {
 .work-container {
     flex-wrap: wrap;
     width: 100%;
-} */
+}  */
+
+
+
 
 /* ul {
     flex-wrap: wrap;
     width: 100%;
-} */
+}
