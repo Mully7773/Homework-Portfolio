@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -13,11 +14,18 @@
     <title>My Portfolio</title>
 </head>
 
+
 <body>
+
+    <!-- Header section with navbar and title -->
+
+
     <header class="header">
         <h1>
             N.Mullenmeister
         </h1>
+
+        <!-- Navbar -->
         <nav class="text-right">
             <ul>
                 <li> <a href="#aboutme"><span>About Me</span></a></li>
@@ -27,94 +35,114 @@
             </ul>
         </nav>
     </header>
+
+
+
+    <!--Main Section -->
+
+
+
     <main>
+
+        <!-- Banner -->
+
         <section>
             <div class="header-2"></div>
-
-
-
         </section>
 
+        <!-- About Me Section -->
 
-
-        <section class="about-container">
-
-            <h2 class="about-text">About Me</h2>
-            <div class="about-info" id="aboutme">
-                <p><img src="assets/640x360.png">"Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed.
-                     A yellow dressinggown, ungirdled, was sustained gently behind him on the mild morning air. He held the bowl aloft and intoned:
+        <section class="flex-container">
+            <h2 class="left-text">About Me</h2>
+            <div class="right-content" id="aboutme">
+                <p><img src="assets/640x360.png">"Stately, plump Buck Mulligan came from the stairhead, bearing a bowl
+                    of lather on which a mirror and a razor lay crossed.
+                    A yellow dressinggown, ungirdled, was sustained gently behind him on the mild morning air. He held
+                    the bowl aloft and intoned:
 
                     —Introibo ad altare Dei.
-                    
+
                     Halted, he peered down the dark winding stairs and called out coarsely:
-                    
+
                     —Come up, Kinch! Come up, you fearful jesuit!
-                    
-                    Solemnly he came forward and mounted the round gunrest. 
-                    He faced about and blessed gravely thrice the tower, the surrounding land and the awaking mountains. 
-                    Then, catching sight of Stephen Dedalus, he bent towards him and made rapid crosses in the air, gurgling in his throat and shaking his head. 
-                    Stephen Dedalus, displeased and sleepy, leaned his arms on the top of the staircase and looked coldly at the shaking gurgling face that blessed him, equine in its length, and at the light untonsured hair,
+
+                    Solemnly he came forward and mounted the round gunrest.
+                    He faced about and blessed gravely thrice the tower, the surrounding land and the awaking mountains.
+                    Then, catching sight of Stephen Dedalus, he bent towards him and made rapid crosses in the air,
+                    gurgling in his throat and shaking his head.
+                    Stephen Dedalus, displeased and sleepy, leaned his arms on the top of the staircase and looked
+                    coldly at the shaking gurgling face that blessed him, equine in its length, and at the light
+                    untonsured hair,
                     grained and hued like pale oak."</p>
-        
-            </div>
-        
-        </section>
-            <!-- <div class="work-container-left">
-                <h2 class="work-text">Work</h2>
-            </div> -->
-
-            <div class="about-container">
-                <h2 class="about-text">Work</h2>
-
-        <section class="work-container-right" id="work">
-            <div class="work-item work-item-1"> 
-            <a class="work-item-1" href="#" target="_blank"></a>
-                <h3>HTML Project</h3>
-            </div>
-            <div class="work-item work-item-2">
-                <a class="work-item-2" href="#" target="_blank"></a>
-                <h3>CSS Project</h3>
-            </div>
-            <div class="work-item work-item-3">
-                <a class="work-item-3" href="#" target="_blank"></a>
-                <h3>JavaScript Project</h3>
-            </div>
-            <div class="work-item work-item-4">
-                <a class="work-item-4" href="#" target="_blank"></a>
-                <h3>React Project</h3>
-            </div>
-            <div class="work-item work-item-5">
-                <a class="work-item-5" href="#" target="_blank"></a>
-                <h3>Node.js Project</h3>
             </div>
         </section>
 
+        <!-- Work Section -->
 
-    </div>
+        <div class="flex-container">
+            <h2 class="left-text">Work</h2>
 
+            <!-- Work Items Section -->
 
-    <section class="about-container">
-
-        <h2 class="about-text" id="contactme">Contact</h2>
-        <div class="about-info">
-            <p>Email: example@example.com.</p>
-            <p>Github: github.com</p>
-            <p>Phone: 123-456-7890</p>
+            <section class="work-container-right" id="work">
+                <div class="work-item work-item-1">
+                    <a class="work-item-1" href="#" target="_blank"></a>
+                    <h3>HTML Project</h3>
+                </div>
+                <div class="work-item work-item-2">
+                    <a class="work-item-2" href="#" target="_blank"></a>
+                    <h3>CSS Project</h3>
+                </div>
+                <div class="work-item work-item-3">
+                    <a class="work-item-3" href="#" target="_blank"></a>
+                    <h3>JavaScript Project</h3>
+                </div>
+                <div class="work-item work-item-4">
+                    <a class="work-item-4" href="#" target="_blank"></a>
+                    <h3>React Project</h3>
+                </div>
+                <div class="work-item work-item-5">
+                    <a class="work-item-5" href="#" target="_blank"></a>
+                    <h3>Node.js Project</h3>
+                </div>
+            </section>
         </div>
-    
-    </section>
 
-    <section class="about-container">
+        <!-- Contact Me Section -->
 
-        <h2 class="about-text" id="resume">Resume</h2>
-        <div class="about-info">
-            <p>Please see my resume here.</p>
-        </div>
-    
-    </section>
+        <section class="flex-container">
+
+            <h2 class="left-text" id="contactme">Contact</h2>
+            <div class="right-content">
+                <p>Email: example@example.com.</p>
+                <p>Github: github.com</p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+
+        </section>
+
+        <!-- Resume Section -->
+
+        <section class="flex-container">
+
+            <h2 class="left-text" id="resume">Resume</h2>
+            <div class="right-content">
+                <p>Please see my resume<a href="#" target="_blank">here.</a></p>
+            </div>
+
+        </section>
     </main>
+
+    <!-- Footer -->
+
     <footer>
+
         <h3>Made with HTML, CSS, and &hearts;.</h3>
+
+        <!-- Copyright -->
+
+        <p>&copy Copyright All Rights Reserved</p>
+
     </footer>
 </body>
 

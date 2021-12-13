@@ -1,27 +1,20 @@
+/* Universal Styles */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* main {
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
-} */
+/* Header Styles */
 
 .header {
     display: flex;
-    /* height: 100%; I need to ask about this...*/
-    /* width: 100%; */
     justify-content: flex-end;
     align-items: flex-end;
     margin: auto;
     height: 100px;
     padding: 5px;
-    /* text-align: left; */
     background: whitesmoke;
     color: turquoise;
     font-size: 30px;
@@ -46,27 +39,23 @@ nav li {
     display: inline-block;
   }
 
-  span {
+span {
       font-family: 'Sora', sans-serif;
       font-size: 21px;
       color:rgba(110, 16, 110, 0.808)
   }
 
-  span:hover {
+span:hover {
     color: turquoise;
     text-decoration: underline;
   }
 
- h1 {
-     /* Used padding here to get the links to move more toward the right...I think there is probably a better way to do this. */
-     /* padding-right: 20%;   */
+h1 {
      padding-left: 0.5%;
      font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
  }
 
-/* h2 {
-    margin-left: 16px;;
-} */
+
 a:link {
     text-decoration: none;
 }
@@ -74,34 +63,32 @@ a {
     display: block;
 }
 
-.work-item:hover {
-    border-color: teal;
-    border-style: double;
-    border-width: 4px;
-  }
 
-/* Begin Sky Banner */
+/* Sky Banner Styles */
+
+
+
 .header-2 {
     width: 100%;
     height: 200px;
+    /* The source for this image is in the README. */
     background-image: url("cloud--1024x667.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* Start of About Section */
-.about-container {
+/* Flex-Container Section Styles */
+
+
+
+.flex-container {
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
-    background-color: #e91e1e;
+    background-color: skyblue;
     margin: 2%;
-    /* margin: auto; will fill in everything */
     justify-content: flex-end;
 }
 
-
-.about-text {
+.left-text {
     width: 42%;
     font-size: 42px;
     font-family: 'Sora', sans-serif;
@@ -111,8 +98,6 @@ a {
     /* Shift this around to get the left border lined up. */
     padding-right: 4px;
     padding-left: 24px;
-    /* padding: 10px; */
-    /* width: 50%; */
 }
 
 img {
@@ -121,9 +106,8 @@ img {
     border-radius: 50%;
 }
 
-.about-info {
+.right-content {
     width: 100%;
-    /* margin: 10px; */
     font-size: 16px;
     padding: 10px;
     padding-left: 35px;
@@ -132,27 +116,26 @@ img {
     font-family: 'Sora', sans-serif;
 }
 
-/* Start of work section */
+/* Work Section Styles */
 
 .work-container-right {
     display: flex;
     justify-content: space-evenly;
-    background-color: blue;
+    background-color: skyblue;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     margin-left: 2px;
     width:100%;
-    /* margin-top: 20%; */
-    /* margin-right: 2%; */
     padding: 20px;
     border-left: 3px solid darkcyan;
 }
 
 .work-item {
-    /* width: 50%; */
     margin: 10px;
     border: 3px solid black;
     background-image: url("640x360.png");
+    font-family: 'Sora', sans-serif;
+    color: rgb(36, 84, 85);
 }
 
 .work-item-1 {
@@ -175,7 +158,6 @@ img {
 
 .work-item-4 {
     min-height: 100px;
-    /* width: 300px; */
     width: 50%;
 }
 
@@ -185,17 +167,25 @@ img {
     width: 50%;
 }
 
+.work-item:hover {
+    border-color: teal;
+    border-style: double;
+    border-width: 4px;
+    color:white;
+  }
+
+
+/* Footer Styles */
+
 footer {
     text-align: center;
-    color: rgb(116, 116, 214)
+    color: rgb(116, 116, 214);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-/* .info {
-    float: right;
-    width: 50px;
-    background-color: red;
-} */
 
 
+
+/* Media Queries */
 
 
 @media screen and (min-width: 330px) and (max-width: 594px) {
@@ -205,10 +195,12 @@ footer {
         margin: auto;
         text-align: center;
     }
+
 span {
     color: white;
     font-weight: bold;
 } 
+
     h1 {
         text-align: center;
     }
@@ -233,6 +225,7 @@ span {
         margin: auto;
         text-align: center;
     }
+
     span {
         color: white;
         font-weight: bold;
@@ -262,6 +255,7 @@ span {
         margin: auto;
         text-align: center;
     }
+
     span {
         color: white;
         font-weight: bold;
@@ -282,37 +276,4 @@ span {
     flex-wrap: wrap;
     width: 100%;
 }
-}
-
-
-
-
-
-
-
-
-
-/* @media all and (max-width: 594px) {
-    header {
-        flex-wrap: wrap;
-        width: 100%;
-    }
-}
-
-.about-container {
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.work-container {
-    flex-wrap: wrap;
-    width: 100%;
-}  */
-
-
-
-
-/* ul {
-    flex-wrap: wrap;
-    width: 100%;
 }
